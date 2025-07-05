@@ -4,5 +4,7 @@ st.title("My Streamlit Demo Application")
 
 name = st.text_input("Enter a name")
 
-st.success(f"Hello {name}! Good morning!")
-st.balloons()
+if name:
+    st.success(f"Hello {name}! Good morning!")
+    st.balloons()
+
